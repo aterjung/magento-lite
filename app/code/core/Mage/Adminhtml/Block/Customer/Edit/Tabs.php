@@ -59,11 +59,11 @@ class Mage_Adminhtml_Block_Customer_Edit_Tabs extends Mage_Adminhtml_Block_Widge
             'active'    => Mage::registry('current_customer')->getId() ? false : true
         ));
 
-        $this->addTab('addresses', array(
+/*        $this->addTab('addresses', array(
             'label'     => Mage::helper('customer')->__('Addresses'),
             'content'   => $this->getLayout()->createBlock('adminhtml/customer_edit_tab_addresses')->initForm()->toHtml(),
         ));
-
+*/
 
         // load: Orders, Shopping Cart, Wishlist, Product Reviews, Product Tags - with ajax
 
@@ -89,12 +89,12 @@ class Mage_Adminhtml_Block_Customer_Edit_Tabs extends Mage_Adminhtml_Block_Widge
                 'url'       => $this->getUrl('*/*/wishlist', array('_current' => true)),
             ));
 
-            if (Mage::getSingleton('admin/session')->isAllowed('newsletter/subscriber')) {
+            /*if (Mage::getSingleton('admin/session')->isAllowed('newsletter/subscriber')) {
                 $this->addTab('newsletter', array(
                     'label'     => Mage::helper('customer')->__('Newsletter'),
                     'content'   => $this->getLayout()->createBlock('adminhtml/customer_edit_tab_newsletter')->initForm()->toHtml()
                 ));
-            }
+            }*/
 
             if (Mage::getSingleton('admin/session')->isAllowed('catalog/reviews_ratings')) {
                 $this->addTab('reviews', array(

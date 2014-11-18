@@ -39,8 +39,8 @@
         <reference name="left">
             <block type="adminhtml/customer_edit_tabs" name="customer_edit_tabs">
                 <block type="adminhtml/customer_edit_tab_view" name="customer_edit_tab_view" template="customer/tab/view.phtml">
-                    <block type="adminhtml/customer_edit_tab_view_sales" name="sales" template="customer/tab/view/sales.phtml" before="-" />
-                    <block type="adminhtml/customer_edit_tab_view_accordion" name="accordion" />
+                    <!--block type="adminhtml/customer_edit_tab_view_sales" name="sales" template="customer/tab/view/sales.phtml" before="-" /-->
+                    <!--block type="adminhtml/customer_edit_tab_view_accordion" name="accordion" /-->
                 </block>
                 <action method="addTab"><name>customer_edit_tab_view</name><block>customer_edit_tab_view</block></action>
             </block>
@@ -55,42 +55,42 @@
         </reference>
     </adminhtml_customer_group_index>
     <adminhtml_customer_wishlist>
-        <block type="adminhtml/customer_edit_tab_wishlist" name="customer.wishlist.edit.tab" output="toHtml" />
+        <!--block type="adminhtml/customer_edit_tab_wishlist" name="customer.wishlist.edit.tab" output="toHtml" /-->
     </adminhtml_customer_wishlist>
 
     <adminhtml_customer_orders>
         <block type="core/text_list" name="root" output="toHtml">
-            <block type="adminhtml/customer_edit_tab_orders" name="adminhtml.customer.edit.tab.orders"/>
+            <!--block type="adminhtml/customer_edit_tab_orders" name="adminhtml.customer.edit.tab.orders"/-->
         </block>
     </adminhtml_customer_orders>
 
     <adminhtml_customer_carts>
         <block type="core/text_list" name="root" output="toHtml">
-            <block type="adminhtml/customer_edit_tab_carts" name="admin.customer.carts"/>
+            <!--block type="adminhtml/customer_edit_tab_carts" name="admin.customer.carts"/-->
         </block>
     </adminhtml_customer_carts>
 
     <adminhtml_customer_viewcart>
         <block type="core/text_list" name="root" output="toHtml">
-            <block type="adminhtml/customer_edit_tab_view_cart" name="admin.customer.view.cart"/>
+            <!--block type="adminhtml/customer_edit_tab_view_cart" name="admin.customer.view.cart"/-->
         </block>
     </adminhtml_customer_viewcart>
 
     <adminhtml_customer_viewwishlist>
         <block type="core/text_list" name="root" output="toHtml">
-            <block type="adminhtml/customer_edit_tab_view_wishlist" name="admin.customer.view.wishlist"/>
+            <!--block type="adminhtml/customer_edit_tab_view_wishlist" name="admin.customer.view.wishlist"/-->
         </block>
     </adminhtml_customer_viewwishlist>
 
     <adminhtml_customer_lastorders>
         <block type="core/text_list" name="root" output="toHtml">
-            <block type="adminhtml/customer_edit_tab_view_orders" name="admin.customer.lastorders"/>
+            <!--block type="adminhtml/customer_edit_tab_view_orders" name="admin.customer.lastorders"/-->
         </block>
     </adminhtml_customer_lastorders>
 
     <adminhtml_customer_productreviews>
         <block type="core/text_list" name="root" output="toHtml">
-            <block type="adminhtml/customer_edit_tab_reviews" name="admin.customer.reviews"/>
+            <!--block type="adminhtml/customer_edit_tab_reviews" name="admin.customer.reviews"/-->
         </block>
     </adminhtml_customer_productreviews>
 
@@ -107,9 +107,9 @@
     </adminhtml_customer_taggrid>
 
     <adminhtml_customer_newsletter>
-        <block type="core/text_list" name="root" output="toHtml">
+        <!--block type="core/text_list" name="root" output="toHtml">
             <block type="adminhtml/customer_edit_tab_newsletter_grid" name="admin.customer.newsletter.grid"/>
-        </block>
+        </block-->
     </adminhtml_customer_newsletter>
 
     <adminhtml_customer_grid>

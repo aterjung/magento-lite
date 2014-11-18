@@ -68,7 +68,7 @@ class Mage_Adminhtml_Block_Customer_Group_Edit_Form extends Mage_Adminhtml_Block
                 'title' => Mage::helper('customer')->__('Tax Class'),
                 'class' => 'required-entry',
                 'required' => true,
-                'values' => Mage::getSingleton('tax/class_source_customer')->toOptionArray()
+                'values' => array()//Mage::getSingleton('tax/class_source_customer')->toOptionArray()
             )
         );
 
